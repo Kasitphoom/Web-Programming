@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #Photo{
+            border: 1px solid black;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        thead td{
+            height: 20px;
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+        }
+        tbody td, tbody th{
+            height: 30px;
+            padding: 2px;
+        }
+        tbody th{
+            border: 1px solid black;
+        }
+        tbody td { 
+            border-left:1px solid black;
+            border-right: 1px solid black;
+        }
+        tbody tr:last-child td{
+            border-bottom: 1px solid black;
+        }
+        .sem-title{
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .subj-id{
+            width: 80px;
+        }
+        .subj-name{
+            width: 320px;
+        }
+        .small-in{
+            width: 50px;
+        }
+        tbody td:nth-child(2), 
+        tbody td:nth-child(3), 
+        .tr-cen{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="14">
+                        <h1>( Unofficial Transcript )</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="14"></td>
+                </tr>
+                <tr>
+                    <td colspan="12"></td>
+                    <td colspan="2" rowspan="5" id="Photo">
+                        photo
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                    <td colspan="3">School of engineering</td>
+                </tr>
+                <tr>
+                    <td colspan="11"></td>
+                </tr>
+                <tr>
+                    <td colspan="11"></td>
+                </tr>
+                <tr>
+                    <td colspan="11">
+                        <label for="name">Name</label><input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="7">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob">
+                    </td>
+                    <td colspan="7">
+                        <label for="id">Student ID</label>
+                        <input type="number" name="id" id="id">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="7">
+                        <label for="admission">Date of admission</label>
+                        <input type="date" name="admission" id="admission">
+                    </td>
+                    <td colspan="7">
+                        <label for="grad">Graduation</label>
+                        <input type="date" name="grad" id="grad">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="14">
+                        <label for="degree">Degree</label>
+                        <input type="text" name="degree" id="degree">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="14">
+                        <label for="major">Major</label>
+                        <input type="text" name="major" id="major">
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5" width="400px">COURSE TITLE</th>
+                    <th>CREDIT</th>
+                    <th>GRADE</th>
+                    <th colspan="5" width="400px">COURSE TITLE</th>
+                    <th>CREDIT</th>
+                    <th>GRADE</th>
+                </tr>
+                <tr>
+                    <td colspan="5" class="sem-title">Transfer Credit</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input class="subj-id" type="text"><input class="subj-name" type="text"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input class="subj-id" type="text"><input class="subj-name" type="text"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="tr-cen">
+                        <label> GPA :</label>
+                        <input class="small-in" type="number">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="sem-title"> 1st Semester, Year, 2021-2022</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input class="subj-id" type="text"><input class="subj-name" type="text"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="tr-cen">
+                        <label>GPS :</label>
+                        <input class="small-in" type="number">
+                        <label>GPA :</label>
+                        <input class="small-in" type="number">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="sem-title">2nd Semester, Year, 2021-2022</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input class="subj-id" type="text"><input class="subj-name" type="text"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="tr-cen">
+                        <label>GPS :</label>
+                        <input class="small-in" type="number">
+                        <label>GPA :</label>
+                        <input class="small-in" type="number">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="sem-title">1st Semester, Year, 2022-2023</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input class="subj-id" type="text"><input class="subj-name" type="text"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td><input type="number" class="small-in"></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="tr-cen">
+                        <label>GPS :</label>
+                        <input class="small-in" type="number">
+                        <label>GPA :</label>
+                        <input class="small-in" type="number">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="tr-cen">
+                        <label for="cred">Total number of credit earned</label>
+                        <input class="small-in" type="number" name="cred" id="cred">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
