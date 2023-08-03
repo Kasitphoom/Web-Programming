@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        table{
+            margin: auto;
+        }
+        table input{
+            margin: 10px;
+        }
+        button[type="submit"]{
+            padding: 10px;
+            background-color: #73bd04;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+        }
+        .main{
+            border-bottom: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td rowspan="3" class="main"><img src="circle-user-solid.svg" alt="" width="200"></td>
+                <td class="main">Personal information</td>
+            </tr>
+            <tr>
+                <td><label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="John Doe">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age:</label>
+                    <br>
+                    <input type="range" name="age" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="profile">Profile:</label>
+                    <br>
+                    <textarea name="profile" id="profile" cols="30" rows="10"></textarea>
+                </td>
+                <td>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="example@email.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <label for="phone">Phone:</label>
+                    <br>
+                    <input type="tel" name="phone" id="phone" placeholder="092321321">
+                </td>
+            </tr>
+            <tr>
+                <td class="main">
+                    Address:
+                </td>
+                <td class="main">
+                    Education
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <input type="text" name="street" id="street" placeholder="Maple Street">
+                    <br>
+                    <input type="text" name="city" id="city" placeholder="California">
+                    <br>
+                    <select name="country" id="country">
+                    </select>
+                </td>
+                <td>
+                    <label for="university">University:</label>
+                    <br>
+                    <input type="text" name="university" id="university" placeholder="KMITL">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="degree">Degree:</label>
+                    <br>
+                    <input type="text" name="degree" id="degree" placeholder="Software Engineering">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="graduationYear">Year of Graduation:</label>
+                    <br>
+                    <input type="date" name="graduationYear" id="graduationYear">
+                </td>
+            </tr>
+            <tr>
+                <td class="main">
+                    Contacts:
+                </td>
+                <td class="main">
+                    Skills & Experience:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ref">Reference:</label>
+                    <br>
+                    <textarea name="ref" id="ref" cols="30" rows="10"></textarea>
+                </td>
+                <td>
+                    <label for="skills">Skills:</label>
+                    <br>
+                    <textarea name="skills" id="skills" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="favColor">Favorite Colour:</label>
+                    <br>
+                    <input type="color" name="favColor" id="favColour">
+                </td>
+                <td>
+                    <label for="experience">Experience:</label>
+                    <br>
+                    <textarea name="experience" id="experience" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" value="Submit" onclick="displayResume()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
