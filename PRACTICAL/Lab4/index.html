@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form>
+        <div class="main-content">
+            <div class="left-ctn">
+                <div class="avatar border-bottom">
+                    <img src="circle-user-solid.svg" alt="" width="200">
+                </div>
+                <div class="profile border-bottom hoverable">
+                    <p>Profile:</p>
+                    <textarea name="profile" id="profile" cols="30" rows="5"></textarea>
+                </div>
+                <div class="address">
+                    <div class="hoverable">
+                        <p class="border-bottom">Address:</p>
+                        <input type="text" name="street" id="street" placeholder="Maple Street">
+                    </div>
+                    <div class="hoverable">
+                        <input type="text" name="city" id="city" placeholder="California">
+                    </div>
+                    <div class="hoverable">
+                        <input type="text" name="state" id="state" placeholder="CA">
+                    </div>
+                    <div class="hoverable">
+                        <select name="country" id="country">
+                        </select>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="hoverable">
+                        <p class="border-bottom">Contacts:</p>
+                    </div>
+                    <div class="hoverable">
+                        <p>Reference:</p>
+                    </div>
+                    <div class="hoverable">
+                        <textarea name="ref" id="ref" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="fav-color">
+                    <div class="hoverable">
+                        <label for="favColor">Favorite Colour:</label>
+                        <br>
+                        <input type="color" name="favColor" id="favColour">
+                    </div>
+                </div>
+            </div>
+            <div class="right-ctn">
+                <div class="info">
+                    <div class="hoverable">
+                        <p class="border-bottom">
+                            Personal Information
+                        </p>
+                    </div>
+                    <div class="name">
+                        <div class="hoverable">
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="hoverable">
+                            <label for="age">Age:</label>
+                            <br>
+                            <input type="range" name="age" id="age">
+                        </div>
+                        <div class="hoverable">
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="hoverable">
+                            <label for="phone">Phone:</label>
+                            <br>
+                            <input type="tel" name="phone" id="phone" placeholder="092321321">
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="hoverable">
+                        <p class="border-bottom">
+                        Education
+                    </p>
+                    </div>
+                    <div class="hoverable">
+                        <label for="university">University:</label>
+                        <br>
+                        <input type="text" name="university" id="university" placeholder="KMITL">
+                    </div>
+                    <div class="hoverable">
+                        <label for="degree">Degree:</label>
+                        <br>
+                        <input type="text" name="degree" id="degree" placeholder="Software Engineering">
+                    </div>
+                    <div class="hoverable">
+                        <label for="graduationYear">Year of Graduation:</label>
+                        <br>
+                        <input type="date" name="graduationYear" id="graduationYear">
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="hoverable">
+                        <p class="border-bottom">
+                            Skills & Experience
+                        </p>
+                    </div>
+                    <div class="hoverable">
+                        <label for="skills">Skills:</label>
+                        <br>
+                        <textarea name="skills" id="skills" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="hoverable">
+                        <label for="experience">Experience:</label>
+                        <br>
+                        <textarea name="experience" id="experience" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-ctn">
+            <button type="submit" value="Submit" onclick="displayResume()">Submit</button>
+        </div>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>

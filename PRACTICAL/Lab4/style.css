@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="color"]{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+}
+.left-ctn{
+    background-color: #359EBE;
+    height: auto;
+    padding: 20px;
+}
+
+.left-ctn p, .left-ctn label{
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.border-bottom{
+    border-bottom: 1px solid black;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.avatar img{
+    border-radius: 50%;
+    background-color: white;
+}
+.right-ctn{
+    display: block;
+    height: auto;
+    width: 500px;
+}
+
+.right-ctn p, .right-ctn label{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.info{
+    background-color: #FEFFA2;
+    padding: 20px;
+}
+
+.education{
+    background-color: #3EA147;
+    padding: 20px;
+}
+
+.skill{
+    background-color: #CFCFCF;
+    padding: 20px;
+}
+
+.button-ctn{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+button[type="submit"]{
+    padding: 10px;
+    background-color: #73bd04;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+.hoverable:hover{
+    color: white;
+    background-color: #FF00F2;
+}
