@@ -88,6 +88,7 @@ html{
 .section{
     height: 100vh;
     display: flex;
+    align-items: stretch;
     flex-direction: column;
     border-bottom: #747474 1px solid;
 }
@@ -123,11 +124,14 @@ html{
 }
 
 /* experience */
+.date{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
 .experience-container{
     display: flex;
-    justify-content: center;
     align-items: stretch;
-    position: absolute;
 }
 
 .experience-title{
@@ -144,4 +148,13 @@ html{
 .experience ul li p{
     color: #747474;
     margin: 10px 0;
+}
+.keyword-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.key{
+    padding: 40px;
+    font-size: 25px;
+    font-weight: bold;
 }
