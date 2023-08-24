@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Lists{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #Lists th{
+            border: 1px solid black;
+        }
+        #Lists td{
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <script>
+        function addText(){
+            const Name = document.getElementById("name");
+            const Amount = document.getElementById("amount");
+            const Price = document.getElementById("price");
+
+            const Array = [Name.value, Amount.value, Price.value];
+
+            const Lists = document.getElementById("Lists");
+
+            const row = Lists.insertRow(-1);
+
+            for(let i = 0; i < Array.length; i++){
+                const cell = row.insertCell(i);
+                cell.innerHTML = Array[i];
+            }
+
+            Name.value = "";
+            Amount.value = "";
+            Price.value = "";
+        }
+
+        function clearList(){
+            const Lists = document.getElementById("Lists");
+            const row = Lists.rows.length;
+            for(let i = 1; i < row; i++){
+                Lists.deleteRow(1);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+
+        <div class="info">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+
+            <label for="amount">Amount: </label>
+            <input type="number" name="amount" id="amount">
+
+            <label for="price">Price: </label>
+            <input type="number" name="price" id="price">
+        </div>
+        
+        <div class="buttons">
+            <input type="button" value="Add" onclick="addText()">
+            <input type="reset" value="Clear">
+            <input type="button" value="Reset List" onclick="clearList()">
+        </div>
+        
+    </form>
+    <div>
+        <h2>Shopping List</h2>
+        <table class="Lists" id="Lists">
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

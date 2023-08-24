@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 .horizontal-bar{
-    background-color: rgba(49,49,49,.2);
+    background-color: rgba(49, 49, 49, 0.2);
     height: 2px;
     width: 100%;   
     margin: 30px 0;
@@ -21,6 +21,26 @@ html{
     margin: 0 30px;
     position: relative;
 }
+/* topbar */
+
+.topbar{
+    background-color: #313131;
+    height: 80px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.topbar i{
+    color: white;
+    font-size: 35px;
+}
+
 /* sidebar */
 .sidebar{
     background-color: #313131;
@@ -28,6 +48,9 @@ html{
     width: 25%;
     padding: 20px 0 20px 24px;
     position: fixed;
+    left: 0;
+    transition: .3s ease-in-out;
+    z-index: 1;
 }
 
 .sidebar-content{
@@ -45,9 +68,15 @@ html{
     color: white;
     padding: 20px 30px;
     width: 100%;
+    transition: background-color .15s;
 }
 
-.section-list a:hover{
+.section-list a.active{
+    background-color: hsla(0,0%,100%,.1);
+    border-left: 2px solid white;
+}
+
+.section-list a:hover:not(.active){
     background-color: #363636;
 }
 
@@ -102,6 +131,7 @@ html{
     padding: 30px;
     background-color: #f0e3d3;
     height: 260px;
+    text-align: center;
 }
 
 .section .content{
@@ -145,6 +175,10 @@ html{
     margin-bottom: 30px;
 }
 
+.experience ul{
+    padding-left: 20px;
+}
+
 .experience ul li p{
     color: #747474;
     margin: 10px 0;
@@ -157,4 +191,99 @@ html{
     padding: 40px;
     font-size: 25px;
     font-weight: bold;
+}
+
+/* For Ipad */
+@media screen and (max-width: 1024px){
+    /* topbar */
+    .topbar{
+        display: flex;
+    }
+    /* sidebar */
+    .sidebar{
+        width: 50%;
+        left: -50%;
+    }
+    .sidebar.show{
+        left: 0;
+    }
+    /* mainsection */
+    .main-section{
+        padding: 80px 0 0 0;
+    }
+    .section{
+        height: auto;
+    }
+}
+
+/* For Mobile */
+@media screen and (max-width: 768px){
+    /* topbar */
+    .topbar{
+        display: flex;
+    }
+    /* sidebar */
+    .sidebar{
+        width: 100%;
+        left: -100%;
+    }
+    .sidebar.show{
+        left: 0;
+    }
+    /* mainsection */
+    .main-section{
+        padding: 80px 0 0 0;
+    }
+    .section{
+        height: auto;
+    }
+    .section .title{
+        font-size: 30px;
+    }
+    .section .content{
+        padding: 30px 20px;
+    }
+    .content tbody{
+        display: flex;
+        flex-direction: column;
+    }
+    .content table *{
+        word-wrap: break-word;
+    }
+    .content tr{
+        display: flex;
+        gap: 10px;
+    }
+    .content tr :nth-child(1){
+        width: 180px;
+    }
+    .content table th{
+        font-size: 20px;
+    }
+    .content table td{
+        font-size: 18px;
+    }
+    .experience-title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .experience-sub-title{
+        font-size: 18px;
+        text-align: center;
+    }
+    .experience-container{
+        flex-direction: column;
+        gap: 30px;
+        /* align-items: center; */
+    }
+    .date{
+        width: 100%;
+        justify-content: center;
+    }
+    .experience ul li p{
+        font-size: 16px;
+    }
+    .key{
+        font-size: 20px;
+    }
 }

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #7FFFD4;
+}
+h1{
+    font-size: 48px;
+    margin: 20px 0;
+}
+h2{
+    font-size: 36px;
+    margin: 20px 0;
+}
+h3{
+    font-size: 24px;
+    margin: 20px 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.main{
+    margin: auto;
+    max-width: 1080px;
+    background-color: #F0FFFF;
+    padding: 20px 20px;
+}
+
+.programs{
+    display: flex;
+    margin: 40px 20px;
+}
+
+.semester{
+    width: 100%;
+    margin: 20px;
+}
+
+.semester div{
+    border: #afafaf 1px solid;
+    padding: 10px;
+}
+
+.semester p{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 750px) and (min-width: 480px){
+    .programs{
+        flex-wrap: wrap;
+    }
+}

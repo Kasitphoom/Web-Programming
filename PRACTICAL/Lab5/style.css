@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+body{
+    max-width: 900px;
+    margin: auto;
+}
+
+input{
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="color"]{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.left-ctn{
+    background-color: #359EBE;
+    height: auto;
+    padding: 20px;
+    width: 35%;
+    max-width: 250px;
+}
+
+.left-ctn p, .left-ctn label{
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.border-bottom{
+    border-bottom: 1px solid black;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.avatar img{
+    border-radius: 50%;
+    background-color: white;
+    width: 200px;
+}
+.right-ctn{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.right-ctn p, .right-ctn label{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.info{
+    background-color: #FEFFA2;
+    padding: 20px;
+}
+
+.education{
+    background-color: #3EA147;
+    padding: 20px;
+}
+
+.skill{
+    background-color: #CFCFCF;
+    padding: 20px;
+}
+
+.button-ctn{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+button[type="submit"]{
+    padding: 10px;
+    background-color: #73bd04;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+.hoverable:hover{
+    color: white;
+    background-color: #FF00F2;
+}
+
+@media screen and (max-width: 900px) {
+    *{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .avatar img{
+        width: calc(200px / 1.5)
+    }
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 14px;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    .left-ctn{
+        width: 100%;
+        max-width: none;
+    }
+}
