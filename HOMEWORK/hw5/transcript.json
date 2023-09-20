@@ -1,0 +1,95 @@
+{
+    "student_name": "Kasitphoom Thowongs",
+    "date_of_birth": "October 29th 2004",
+    "student_id": "65011328",
+    "date_of_admission": "2022",
+    "date_of_graduation": "N/A",
+    "degree": "Bachelor of Engineering",
+    "major": "Software Engineering",
+    "credit": {
+        "Year, 2022-2023" : {
+            "1st Semester" : [
+                {
+                    "name": "Introduction to Calculus",
+                    "subject_id": "01006710",
+                    "credit": "3",
+                    "grade": "4"
+                },
+                {
+                    "name": "Circuits and Electronics",
+                    "subject_id": "01286111",
+                    "credit": "4",
+                    "grade": "4"
+                },
+                {
+                    "name": "ELEMENTARY SYSTEMS PROGRAMMING",
+                    "subject_id": "01286120",
+                    "credit": "4",
+                    "grade": "4"
+                },
+                {
+                    "name": "COMPUTER PROGRAMMING",
+                    "subject_id" : "01286121",
+                    "credit": "4",
+                    "grade": "3"
+                },
+                {
+                    "name": "DIGITAL INTELLIGENCE QUOTIENT",
+                    "subject_id": "96641002",
+                    "credit": "3",
+                    "grade": "4"
+                },
+                {
+                    "name": "INTRODUCTION TO LOGIC",
+                    "subject_id": "96642170",
+                    "credit": "3",
+                    "grade": "3"
+                }
+            ],
+            "2nd Semester" : [
+                {
+                    "name": "Differential Equations",
+                    "subject_id": "01006717",
+                    "credit": "3",
+                    "grade": "3.5"
+                },
+                {
+                    "name": "DISCRETE MATHEMATICS",
+                    "subject_id": "01006718",
+                    "credit": "3",
+                    "grade": "3"
+                },
+                {
+                    "name": "DIGITAL SYSTEM FUNDAMENTALS",
+                    "subject_id": "01286112",
+                    "credit": "4",
+                    "grade": "4"
+                },
+                {
+                    "name": "OBJECT-ORIENTED PROGRAMMING",
+                    "subject_id": "01286131",
+                    "credit": "4",
+                    "grade": "4"
+                },
+                {
+                    "name": "CHARM SCHOOL",
+                    "subject_id": "96641001",
+                    "credit": "2",
+                    "grade": "4"
+                },
+                {
+                    "name": "SPORTS AND RECREATIONAL ACTIVITIES",
+                    "subject_id": "96641003",
+                    "credit": "1",
+                    "grade": "4"
+                },
+                {
+                    "name": "TECHNICAL WRITING",
+                    "subject_id": "96644034",
+                    "credit": "3",
+                    "grade": "4"
+                }
+            ]
+        }
+    }
+}
