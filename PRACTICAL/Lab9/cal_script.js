@@ -8,8 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (e.key == "c"){
             displayString = "";
         } else if (e.key == "=" || e.key == "Enter"){
-            displayString = eval(displayString);
-            displayString = displayString.toString();
+            try {
+                displayString = eval(displayString);
+                displayString = displayString.toString();
+            } catch (e) {
+                displayString = "Error";
+            }
         } else if (accpeted.includes(e.key)){
             displayString += e.key;
         } else {
