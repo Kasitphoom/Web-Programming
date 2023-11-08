@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .form-ctn{
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 10px;
+            margin-top: 20px;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table td, table th{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        table th{
+            background-color: #ededed;
+        }
+        input[type="submit"]{
+            width: 100px;
+            height: 30px;
+            background-color: #329cff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .name-holder{
+            display: flex;
+            justify-content: space-between;
+            background-color: #ededed;
+            padding: 10px;
+        }
+        .name-holder p{
+            min-width: 100px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        Transcript Entry Form
+    </div>
+    <div class="form-ctn">
+        <div class="name-holder">
+            <p>ID: {{data.student.id}}</p>
+            <p>Name: {{data.student.name}}</p>
+        </div>
+        <form method="post" action="/entry/">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for enroll in data.student.enrolls %}
+                    <tr>
+                        <td>{{ enroll.course.id }}</td>
+                        <td>{{ enroll.course.name }}</td>
+                        <td>{{ enroll.course.credit }}</td>
+                        <td><input type="number" name="{{ enroll.course.id }}" value="{{ enroll.score }}"></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
